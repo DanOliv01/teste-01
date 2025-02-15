@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;        
+}
+
+#logo1 {
+    width: 230px;
+    height: 90px;
+}
+
+span {
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.actor-cards-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.cards-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #bea90b;
+    font-size: 17px;
+    font-family: 'kdam Thmor Pro', sans-serif;    
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+
+.banner-1 {
+    background-image: url('https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/03/Godzilla-e-Kong-O-Novo-Imperio.jpeg?w=1220&h=674&crop=1');
+}
+
+.banner-2 {
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2024/03/godzillaekong_2.jpg');
+}
+
+.banner-3 {
+    background-image: url('https://ovicio.com.br/wp-content/uploads/2024/01/20240122-godzilla-e-kong-o-novo-imperio.jpg');
+}
+
+.banner-4 {
+    background-image: url('https://manualdosgames.com/wp-content/uploads/2024/03/Godzilla-e-Kong-O-Novo-Imperio-Descubra-os-Monstros-do-Filme.jpg');
+}
+
+.banner-5 {
+    background-image: url('https://cinepop.com.br/wp-content/uploads/2024/03/1019803085-godzilla-kong-the-new-empire.webp');
+}
+
+.banner-6 {
+    background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/01/31/139957848-2911161b14bc618cf52d9701732557fa.png');
+}
+
+.banner-7 {
+    background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/03/24/1633123449-9ee263c0001dc05634fde776b56ca2af.png');
+}
+
+.banner-8 {
+    background-image: url('https://i0.wp.com/ovicio.com.br/wp-content/uploads/2024/03/20240326-godzilla-e-kong-no-filme-o-novo-imperio.jpg?resize=555%2C555&ssl=1');
+}
+
+.banner-9 {
+    background-image: url('https://br.web.img2.acsta.net/r_1280_720/pictures/24/03/20/10/45/5040611.jpg');
+}
+
+
+footer {
+    height: 300px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+span2 {
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+span3 {
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo2 {
+    width: 230px;
+    height: 150px;
+    margin-left: -55px;
+}
+
+@media(max-width: 768px){
+    .footer-navigation {
+        display: block;
+    }
+
+    #logo1 {
+        width: 230px;
+        height: 150px;
+        margin-left: -55px;
+        margin-top: 50px;
+    }
+
+    span {
+        margin-top: 100px;
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .button {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content {
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+
+    #logo2 {
+        width: 230px;
+        height: 150px;
+        margin-left: -55px;
+        }
+}
